@@ -50,3 +50,8 @@ def close_quick_view(context):
 def verify_product_in_cart(context):
     context.app.main_page.verify_product_in_cart()
 
+
+@then('Click on GetTop Home Icon')
+def click_home_icon(context):
+    context.app.main_page.click_home_button()
+

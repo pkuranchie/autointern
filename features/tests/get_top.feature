@@ -16,10 +16,14 @@ Feature: # Enter feature name here
 #    And Add product to cart
 #    Then verify product is in cart
 
-  Scenario: User can click through multiple product pages by clicking > and <
+#  Scenario: User can click through multiple product pages by clicking > and <
+#    Given Open GetTop page
+#    When Click on a product
+#    And Click on left arrow 2 times
+#    Then Click on right arrow 1 times
+
+  Scenario: "Home" link takes user to Home Page
     Given Open GetTop page
-    When Click on a product
-    And Click on left arrow 2 times
-    Then Click on right arrow 1 times
+    Then Click on GetTop Home Icon
 
 

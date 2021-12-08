@@ -13,6 +13,7 @@ class MainPage(Page):
     PRODUCT_CART = (By.CSS_SELECTOR, "span.cart-icon.image-icon strong")
     LEFT_ARROW = (By.CSS_SELECTOR, "div.hide-for-off-canvas li.prod-dropdown.has-dropdown a.button.icon.is-outline.circle")
     RIGHT_ARROW = (By.XPATH, "//div[@class='hide-for-off-canvas']//li[@class='prod-dropdown has-dropdown']")
+    HOME_BUTTON = (By.XPATH, "//a[@href='https://gettop.us/']")
 
 
     def open_main_page(self):
@@ -44,3 +45,6 @@ class MainPage(Page):
 
     def click_right_arrow(self):
         self.click(*self.RIGHT_ARROW)
+
+    def click_home_button(self):
+        self.click(*self.HOME_BUTTON)
